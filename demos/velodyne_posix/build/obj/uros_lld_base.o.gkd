@@ -1,0 +1,204 @@
+
+;; Function uros_lld_init (uros_lld_init, funcdef_no=0, decl_uid=3212, cgraph_uid=0)
+
+(note# 0 0 NOTE_INSN_DELETED)
+(note# 0 0 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f# 0 0 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [  S8 A8])
+        (reg/f:DI 6 bp)) ../../src/lld/posix/uros_lld_base.c:67# {*pushdi2_rex64}
+     (nil))
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (reg/f:DI 7 sp)) ../../src/lld/posix/uros_lld_base.c:67# {*movdi_internal_rex64}
+     (nil))
+(note# 0 0 NOTE_INSN_PROLOGUE_END)
+(note# 0 0 NOTE_INSN_FUNCTION_BEG)
+(note# 0 0 NOTE_INSN_EPILOGUE_BEG)
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (mem:DI (post_inc:DI (reg/f:DI 7 sp)) [  S8 A8])) ../../src/lld/posix/uros_lld_base.c:70# {*popdi1}
+     (expr_list:REG_CFA_DEF_CFA (plus:DI (reg/f:DI 7 sp)
+            (const_int 8 [0x8]))
+        (nil)))
+(jump_insn# 0 0 2 (simple_return) ../../src/lld/posix/uros_lld_base.c:70# {simple_return_internal}
+     (nil)
+ -> simple_return)
+(barrier 0 0 0)
+
+;; Function uros_lld_alloc (uros_lld_alloc, funcdef_no=1, decl_uid=3215, cgraph_uid=1)
+
+(note# 0 0 NOTE_INSN_DELETED)
+(note# 0 0 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f# 0 0 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [  S8 A8])
+        (reg/f:DI 6 bp)) ../../src/lld/posix/uros_lld_base.c:90# {*pushdi2_rex64}
+     (nil))
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (reg/f:DI 7 sp)) ../../src/lld/posix/uros_lld_base.c:90# {*movdi_internal_rex64}
+     (nil))
+(insn/f# 0 0 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -16 [0xfffffffffffffff0])))
+            (clobber (reg:CC 17 flags))
+            (clobber (mem:BLK (scratch) [  A8]))
+        ]) ../../src/lld/posix/uros_lld_base.c:90# {pro_epilogue_adjust_stack_di_add}
+     (nil))
+(note# 0 0 NOTE_INSN_PROLOGUE_END)
+(insn# 0 0 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [ heapp+0 S8 A64])
+        (reg:DI 5 di [ heapp ])) ../../src/lld/posix/uros_lld_base.c:90# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 5 di [ heapp ])
+        (nil)))
+(insn# 0 0 2 (set (mem/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -16 [0xfffffffffffffff0])) [ size+0 S8 A64])
+        (reg:DI 4 si [ size ])) ../../src/lld/posix/uros_lld_base.c:90# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 4 si [ size ])
+        (nil)))
+(note# 0 0 NOTE_INSN_FUNCTION_BEG)
+(insn# 0 0 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                    (const_int -8 [0xfffffffffffffff8])) [ heapp+0 S8 A64])
+            (const_int 0 [0]))) ../../src/lld/posix/uros_lld_base.c:94# {*cmpdi_ccno_1}
+     (nil))
+(jump_insn# 0 0 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref #)
+            (pc))) ../../src/lld/posix/uros_lld_base.c:94# {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 3)
+(note# 0 0 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 3 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.3297") [flags 0x2] <var_decl # __PRETTY_FUNCTION__>)) ../../src/lld/posix/uros_lld_base.c:94# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 3 (set (reg:SI 1 dx)
+        (const_int 94 [0x5e])) ../../src/lld/posix/uros_lld_base.c:94# {*movsi_internal}
+     (nil))
+(insn# 0 0 3 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2] <var_decl # *.LC0>)) ../../src/lld/posix/uros_lld_base.c:94# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 3 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2] <var_decl # *.LC1>)) ../../src/lld/posix/uros_lld_base.c:94# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 3 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41] <function_decl # __assert_fail>) [ __assert_fail S1 A8])
+        (const_int 0 [0])) ../../src/lld/posix/uros_lld_base.c:94# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_DEAD (reg:DI 4 si)
+            (expr_list:REG_DEAD (reg:DI 2 cx)
+                (expr_list:REG_DEAD (reg:SI 1 dx)
+                    (expr_list:REG_NORETURN (const_int 0 [0])
+                        (expr_list:REG_EH_REGION (const_int 0 [0])
+                            (nil)))))))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 0 0 0)
+(code_label 3 0 0 4 3 "" [1 uses])
+(note# 0 0 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 4 (set (reg:DI 0 ax [61])
+        (mem/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -16 [0xfffffffffffffff0])) [ size+0 S8 A64])) ../../src/lld/posix/uros_lld_base.c:97# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 4 (set (reg:DI 5 di)
+        (reg:DI 0 ax [61])) ../../src/lld/posix/uros_lld_base.c:97# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 0 ax [61])
+        (nil)))
+(call_insn# 0 0 4 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("malloc") [flags 0x41] <function_decl # malloc>) [ __builtin_malloc S1 A8])
+            (const_int 0 [0]))) ../../src/lld/posix/uros_lld_base.c:97# {*call_value}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn# 0 0 4 (use (reg/i:DI 0 ax)) ../../src/lld/posix/uros_lld_base.c:98#
+     (nil))
+(note# 0 0 NOTE_INSN_EPILOGUE_BEG)
+(insn/f# 0 0 4 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 6 bp)
+                    (const_int 8 [0x8])))
+            (set (reg/f:DI 6 bp)
+                (mem:DI (reg/f:DI 6 bp) [  S8 A8]))
+            (clobber (mem:BLK (scratch) [  A8]))
+        ]) ../../src/lld/posix/uros_lld_base.c:98# {leave_rex64}
+     (expr_list:REG_CFA_DEF_CFA (plus:DI (reg/f:DI 7 sp)
+            (const_int 8 [0x8]))
+        (nil)))
+(jump_insn# 0 0 4 (simple_return) ../../src/lld/posix/uros_lld_base.c:98# {simple_return_internal}
+     (nil)
+ -> simple_return)
+(barrier 0 0 0)
+
+;; Function uros_lld_free (uros_lld_free, funcdef_no=2, decl_uid=3217, cgraph_uid=2)
+
+(note# 0 0 NOTE_INSN_DELETED)
+(note# 0 0 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f# 0 0 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [  S8 A8])
+        (reg/f:DI 6 bp)) ../../src/lld/posix/uros_lld_base.c:112# {*pushdi2_rex64}
+     (nil))
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (reg/f:DI 7 sp)) ../../src/lld/posix/uros_lld_base.c:112# {*movdi_internal_rex64}
+     (nil))
+(insn/f# 0 0 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -16 [0xfffffffffffffff0])))
+            (clobber (reg:CC 17 flags))
+            (clobber (mem:BLK (scratch) [  A8]))
+        ]) ../../src/lld/posix/uros_lld_base.c:112# {pro_epilogue_adjust_stack_di_add}
+     (nil))
+(note# 0 0 NOTE_INSN_PROLOGUE_END)
+(insn# 0 0 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [ chunkp+0 S8 A64])
+        (reg:DI 5 di [ chunkp ])) ../../src/lld/posix/uros_lld_base.c:112# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 5 di [ chunkp ])
+        (nil)))
+(note# 0 0 NOTE_INSN_FUNCTION_BEG)
+(insn# 0 0 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                    (const_int -8 [0xfffffffffffffff8])) [ chunkp+0 S8 A64])
+            (const_int 0 [0]))) ../../src/lld/posix/uros_lld_base.c:115# {*cmpdi_ccno_1}
+     (nil))
+(jump_insn# 0 0 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI #)
+            (pc))) ../../src/lld/posix/uros_lld_base.c:115# {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 5)
+(note# 0 0 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 3 (set (reg:DI 0 ax [59])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [ chunkp+0 S8 A64])) ../../src/lld/posix/uros_lld_base.c:116# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 3 (set (reg:DI 5 di)
+        (reg:DI 0 ax [59])) ../../src/lld/posix/uros_lld_base.c:116# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 0 ax [59])
+        (nil)))
+(call_insn# 0 0 3 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41] <function_decl # free>) [ __builtin_free S1 A8])
+        (const_int 0 [0])) ../../src/lld/posix/uros_lld_base.c:116# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(code_label 5 0 0 4 5 "" [1 uses])
+(note# 0 0 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note# 0 0 NOTE_INSN_EPILOGUE_BEG)
+(insn/f# 0 0 4 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 6 bp)
+                    (const_int 8 [0x8])))
+            (set (reg/f:DI 6 bp)
+                (mem:DI (reg/f:DI 6 bp) [  S8 A8]))
+            (clobber (mem:BLK (scratch) [  A8]))
+        ]) ../../src/lld/posix/uros_lld_base.c:118# {leave_rex64}
+     (expr_list:REG_CFA_DEF_CFA (plus:DI (reg/f:DI 7 sp)
+            (const_int 8 [0x8]))
+        (nil)))
+(jump_insn# 0 0 4 (simple_return) ../../src/lld/posix/uros_lld_base.c:118# {simple_return_internal}
+     (nil)
+ -> simple_return)
+(barrier 0 0 0)

@@ -1,0 +1,1079 @@
+
+;; Function pub_tpc__rosout (pub_tpc__rosout, funcdef_no=0, decl_uid=3594, cgraph_uid=0)
+
+(note# 0 0 NOTE_INSN_DELETED)
+(note# 0 0 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f# 0 0 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [  S8 A8])
+        (reg/f:DI 6 bp)) ./src/urosHandlers.c:68# {*pushdi2_rex64}
+     (nil))
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (reg/f:DI 7 sp)) ./src/urosHandlers.c:68# {*movdi_internal_rex64}
+     (nil))
+(insn/f# 0 0 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -32 [0xffffffffffffffe0])))
+            (clobber (reg:CC 17 flags))
+            (clobber (mem:BLK (scratch) [  A8]))
+        ]) ./src/urosHandlers.c:68# {pro_epilogue_adjust_stack_di_add}
+     (nil))
+(note# 0 0 NOTE_INSN_PROLOGUE_END)
+(insn# 0 0 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])
+        (reg:DI 5 di [ tcpstp ])) ./src/urosHandlers.c:68# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 5 di [ tcpstp ])
+        (nil)))
+(note# 0 0 NOTE_INSN_FUNCTION_BEG)
+(insn# 0 0 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [ msgp+0 S8 A64])
+        (const_int 0 [0])) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                    (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])
+            (const_int 0 [0]))) ./src/urosHandlers.c:71# {*cmpdi_ccno_1}
+     (nil))
+(jump_insn# 0 0 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref #)
+            (pc))) ./src/urosHandlers.c:71# {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 2)
+(note# 0 0 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 3 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.4034") [flags 0x2] <var_decl # __PRETTY_FUNCTION__>)) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 3 (set (reg:SI 1 dx)
+        (const_int 71 [0x47])) ./src/urosHandlers.c:71# {*movsi_internal}
+     (nil))
+(insn# 0 0 3 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2] <var_decl # *.LC0>)) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 3 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2] <var_decl # *.LC1>)) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 3 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41] <function_decl # __assert_fail>) [ __assert_fail S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:71# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_DEAD (reg:DI 4 si)
+            (expr_list:REG_DEAD (reg:DI 2 cx)
+                (expr_list:REG_DEAD (reg:SI 1 dx)
+                    (expr_list:REG_NORETURN (const_int 0 [0])
+                        (expr_list:REG_EH_REGION (const_int 0 [0])
+                            (nil)))))))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 0 0 0)
+(code_label 2 0 0 4 2 "" [1 uses])
+(note# 0 0 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 4 (set (reg/f:DI 0 ax [68])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 4 (set (reg/f:DI 0 ax [orig:59 D.4152 ] [59])
+        (mem/f/j:DI (plus:DI (reg/f:DI 0 ax [68])
+                (const_int 32 [0x20])) [ tcpstp_2(D)->topicp+0 S8 A64])) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [68])
+        (nil)))
+(insn# 0 0 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 0 ax [orig:59 D.4152 ] [59])
+            (const_int 0 [0]))) ./src/urosHandlers.c:71# {*cmpdi_ccno_1}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [orig:59 D.4152 ] [59])
+        (nil)))
+(jump_insn# 0 0 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref #)
+            (pc))) ./src/urosHandlers.c:71# {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 3)
+(note# 0 0 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 5 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.4034") [flags 0x2] <var_decl # __PRETTY_FUNCTION__>)) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 5 (set (reg:SI 1 dx)
+        (const_int 71 [0x47])) ./src/urosHandlers.c:71# {*movsi_internal}
+     (nil))
+(insn# 0 0 5 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2] <var_decl # *.LC0>)) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 5 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2] <var_decl # *.LC2>)) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 5 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41] <function_decl # __assert_fail>) [ __assert_fail S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:71# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_DEAD (reg:DI 4 si)
+            (expr_list:REG_DEAD (reg:DI 2 cx)
+                (expr_list:REG_DEAD (reg:SI 1 dx)
+                    (expr_list:REG_NORETURN (const_int 0 [0])
+                        (expr_list:REG_EH_REGION (const_int 0 [0])
+                            (nil)))))))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 0 0 0)
+(code_label 3 0 0 6 3 "" [1 uses])
+(note# 0 0 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 6 (set (reg/f:DI 0 ax [69])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 6 (set (reg/f:DI 0 ax [orig:60 D.4152 ] [60])
+        (mem/f/j:DI (plus:DI (reg/f:DI 0 ax [69])
+                (const_int 32 [0x20])) [ tcpstp_2(D)->topicp+0 S8 A64])) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [69])
+        (nil)))
+(insn# 0 0 6 (set (reg:QI 0 ax [orig:61 D.4153 ] [61])
+        (mem:QI (plus:DI (reg/f:DI 0 ax [orig:60 D.4152 ] [60])
+                (const_int 32 [0x20])) [ *_4+32 S1 A64])) ./src/urosHandlers.c:71# {*movqi_internal}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [orig:60 D.4152 ] [60])
+        (nil)))
+(insn# 0 0 6 (parallel [
+            (set (reg:SI 0 ax [orig:62 D.4153 ] [62])
+                (and:SI (reg:SI 0 ax [orig:61 D.4153 ] [61])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) ./src/urosHandlers.c:71# {*andsi_1}
+     (nil))
+(insn# 0 0 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 0 ax [orig:62 D.4153 ] [62])
+            (const_int 0 [0]))) ./src/urosHandlers.c:71# {*cmpqi_ccno_1}
+     (expr_list:REG_DEAD (reg:QI 0 ax [orig:62 D.4153 ] [62])
+        (nil)))
+(jump_insn# 0 0 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref #)
+            (pc))) ./src/urosHandlers.c:71# {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 4)
+(note# 0 0 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 7 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.4034") [flags 0x2] <var_decl # __PRETTY_FUNCTION__>)) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 7 (set (reg:SI 1 dx)
+        (const_int 71 [0x47])) ./src/urosHandlers.c:71# {*movsi_internal}
+     (nil))
+(insn# 0 0 7 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2] <var_decl # *.LC0>)) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 7 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2] <var_decl # *.LC3>)) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 7 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41] <function_decl # __assert_fail>) [ __assert_fail S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:71# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_DEAD (reg:DI 4 si)
+            (expr_list:REG_DEAD (reg:DI 2 cx)
+                (expr_list:REG_DEAD (reg:SI 1 dx)
+                    (expr_list:REG_NORETURN (const_int 0 [0])
+                        (expr_list:REG_EH_REGION (const_int 0 [0])
+                            (nil)))))))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 0 0 0)
+(code_label 4 0 0 8 4 "" [1 uses])
+(note# 0 0 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 8 (set (reg/f:DI 0 ax [70])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 8 (set (reg/f:DI 0 ax [orig:63 D.4154 ] [63])
+        (mem/f/j:DI (plus:DI (reg/f:DI 0 ax [70])
+                (const_int 8 [0x8])) [ tcpstp_2(D)->csp+0 S8 A64])) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [70])
+        (nil)))
+(insn# 0 0 8 (set (reg:DI 5 di)
+        (reg/f:DI 0 ax [orig:63 D.4154 ] [63])) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [orig:63 D.4154 ] [63])
+        (nil)))
+(call_insn# 0 0 8 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("urosConnIsValid") [flags 0x41] <function_decl # urosConnIsValid>) [ urosConnIsValid S1 A8])
+            (const_int 0 [0]))) ./src/urosHandlers.c:71# {*call_value}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn# 0 0 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 0 ax [orig:64 D.4153 ] [64])
+            (const_int 0 [0]))) ./src/urosHandlers.c:71# {*cmpqi_ccno_1}
+     (expr_list:REG_DEAD (reg:QI 0 ax [orig:64 D.4153 ] [64])
+        (nil)))
+(jump_insn# 0 0 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref #)
+            (pc))) ./src/urosHandlers.c:71# {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 5)
+(note# 0 0 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 9 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.4034") [flags 0x2] <var_decl # __PRETTY_FUNCTION__>)) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 9 (set (reg:SI 1 dx)
+        (const_int 71 [0x47])) ./src/urosHandlers.c:71# {*movsi_internal}
+     (nil))
+(insn# 0 0 9 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2] <var_decl # *.LC0>)) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 9 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2] <var_decl # *.LC4>)) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 9 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41] <function_decl # __assert_fail>) [ __assert_fail S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:71# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_DEAD (reg:DI 4 si)
+            (expr_list:REG_DEAD (reg:DI 2 cx)
+                (expr_list:REG_DEAD (reg:SI 1 dx)
+                    (expr_list:REG_NORETURN (const_int 0 [0])
+                        (expr_list:REG_EH_REGION (const_int 0 [0])
+                            (nil)))))))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 0 0 0)
+(code_label 5 0 0 10 5 "" [1 uses])
+(note# 0 0 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 10 (set (reg:DI 4 si)
+        (const_int 128 [0x80])) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 10 (set (reg:DI 5 di)
+        (const_int 0 [0])) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 10 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("urosAlloc") [flags 0x41] <function_decl # urosAlloc>) [ urosAlloc S1 A8])
+            (const_int 0 [0]))) ./src/urosHandlers.c:71# {*call_value}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_DEAD (reg:DI 4 si)
+            (nil)))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn# 0 0 10 (set (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [ msgp+0 S8 A64])
+        (reg:DI 0 ax [71])) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 0 ax [71])
+        (nil)))
+(insn# 0 0 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                    (const_int -8 [0xfffffffffffffff8])) [ msgp+0 S8 A64])
+            (const_int 0 [0]))) ./src/urosHandlers.c:71# {*cmpdi_ccno_1}
+     (nil))
+(jump_insn# 0 0 10 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref #)
+            (pc))) ./src/urosHandlers.c:71# {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 6)
+(note# 0 0 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 11 (set (reg/f:DI 0 ax [72])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 11 (set (mem/j:SI (reg/f:DI 0 ax [72]) [ tcpstp_2(D)->err+0 S4 A64])
+        (const_int -101 [0xffffffffffffff9b])) ./src/urosHandlers.c:71# {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [72])
+        (nil)))
+(jump_insn# 0 0 11 (set (pc)
+        (label_ref #)) ./src/urosHandlers.c:71# {jump}
+     (nil)
+ -> 7)
+(barrier 0 0 0)
+(code_label 6 0 0 12 6 "" [1 uses])
+(note# 0 0 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 12 (set (reg:DI 0 ax [73])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [ msgp+0 S8 A64])) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 12 (set (reg:DI 5 di)
+        (reg:DI 0 ax [73])) ./src/urosHandlers.c:71# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 0 ax [73])
+        (nil)))
+(call_insn# 0 0 12 (call (mem:QI (symbol_ref:DI ("init_msg__rosgraph_msgs__Log") [flags 0x41] <function_decl # init_msg__rosgraph_msgs__Log>) [ init_msg__rosgraph_msgs__Log S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:71# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(jump_insn# 0 0 12 (set (pc)
+        (label_ref #)) ./src/urosHandlers.c:74# {jump}
+     (nil)
+ -> 8)
+(barrier 0 0 0)
+(code_label 9 0 0 13 9 "" [1 uses])
+(note# 0 0 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 13 (set (reg:SI 5 di)
+        (const_int 1 [0x1])) ./src/urosHandlers.c:76# {*movsi_internal}
+     (nil))
+(call_insn# 0 0 13 (call (mem:QI (symbol_ref:DI ("urosThreadSleepSec") [flags 0x41] <function_decl # urosThreadSleepSec>) [ urosThreadSleepSec S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:76# {*call}
+     (expr_list:REG_DEAD (reg:SI 5 di)
+        (nil))
+    (expr_list:REG_BR_PRED (use (reg:SI 5 di))
+        (nil)))
+(insn# 0 0 13 (const_int 0 [0]) ./src/urosHandlers.c:76# {nop}
+     (nil))
+(code_label 8 0 0 15 8 "" [1 uses])
+(note# 0 0 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 15 (set (reg:DI 0 ax [74])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])) ./src/urosHandlers.c:74# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 15 (set (reg:DI 5 di)
+        (reg:DI 0 ax [74])) ./src/urosHandlers.c:74# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 0 ax [74])
+        (nil)))
+(call_insn# 0 0 15 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("urosTcpRosStatusCheckExit") [flags 0x41] <function_decl # urosTcpRosStatusCheckExit>) [ urosTcpRosStatusCheckExit S1 A8])
+            (const_int 0 [0]))) ./src/urosHandlers.c:74# {*call_value}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn# 0 0 15 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 0 ax [orig:65 D.4153 ] [65])
+            (const_int 0 [0]))) ./src/urosHandlers.c:74# {*cmpqi_ccno_1}
+     (expr_list:REG_DEAD (reg:QI 0 ax [orig:65 D.4153 ] [65])
+        (nil)))
+(jump_insn# 0 0 15 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref #)
+            (pc))) ./src/urosHandlers.c:74# {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 9)
+(note# 0 0 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 16 (set (reg/f:DI 0 ax [75])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])) ./src/urosHandlers.c:85# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 16 (set (mem/j:SI (reg/f:DI 0 ax [75]) [ tcpstp_2(D)->err+0 S4 A64])
+        (const_int 0 [0])) ./src/urosHandlers.c:85# {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [75])
+        (nil)))
+(code_label 7 0 0 17 7 ("_finally") [1 uses])
+(note# 0 0 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 17 (set (reg:DI 0 ax [76])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [ msgp+0 S8 A64])) ./src/urosHandlers.c:89# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 17 (set (reg:DI 5 di)
+        (reg:DI 0 ax [76])) ./src/urosHandlers.c:89# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 0 ax [76])
+        (nil)))
+(call_insn# 0 0 17 (call (mem:QI (symbol_ref:DI ("clean_msg__rosgraph_msgs__Log") [flags 0x41] <function_decl # clean_msg__rosgraph_msgs__Log>) [ clean_msg__rosgraph_msgs__Log S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:89# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn# 0 0 17 (set (reg:DI 0 ax [77])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [ msgp+0 S8 A64])) ./src/urosHandlers.c:89# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 17 (set (reg:DI 5 di)
+        (reg:DI 0 ax [77])) ./src/urosHandlers.c:89# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 0 ax [77])
+        (nil)))
+(call_insn# 0 0 17 (call (mem:QI (symbol_ref:DI ("urosFree") [flags 0x41] <function_decl # urosFree>) [ urosFree S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:89# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn# 0 0 17 (set (reg/f:DI 0 ax [78])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])) ./src/urosHandlers.c:90# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 17 (set (reg:SI 0 ax [orig:66 D.4155 ] [66])
+        (mem/j:SI (reg/f:DI 0 ax [78]) [ tcpstp_2(D)->err+0 S4 A64])) ./src/urosHandlers.c:90# {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [78])
+        (nil)))
+(insn# 0 0 17 (use (reg/i:SI 0 ax)) ./src/urosHandlers.c:91#
+     (nil))
+(note# 0 0 NOTE_INSN_EPILOGUE_BEG)
+(insn/f# 0 0 17 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 6 bp)
+                    (const_int 8 [0x8])))
+            (set (reg/f:DI 6 bp)
+                (mem:DI (reg/f:DI 6 bp) [  S8 A8]))
+            (clobber (mem:BLK (scratch) [  A8]))
+        ]) ./src/urosHandlers.c:91# {leave_rex64}
+     (expr_list:REG_CFA_DEF_CFA (plus:DI (reg/f:DI 7 sp)
+            (const_int 8 [0x8]))
+        (nil)))
+(jump_insn# 0 0 17 (simple_return) ./src/urosHandlers.c:91# {simple_return_internal}
+     (nil)
+ -> simple_return)
+(barrier 0 0 0)
+
+;; Function pub_tpc__vlp_16 (pub_tpc__vlp_16, funcdef_no=1, decl_uid=3596, cgraph_uid=1)
+
+(note# 0 0 NOTE_INSN_DELETED)
+(note# 0 0 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f# 0 0 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [  S8 A8])
+        (reg/f:DI 6 bp)) ./src/urosHandlers.c:108# {*pushdi2_rex64}
+     (nil))
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (reg/f:DI 7 sp)) ./src/urosHandlers.c:108# {*movdi_internal_rex64}
+     (nil))
+(insn/f# 0 0 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -32 [0xffffffffffffffe0])))
+            (clobber (reg:CC 17 flags))
+            (clobber (mem:BLK (scratch) [  A8]))
+        ]) ./src/urosHandlers.c:108# {pro_epilogue_adjust_stack_di_add}
+     (nil))
+(note# 0 0 NOTE_INSN_PROLOGUE_END)
+(insn# 0 0 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])
+        (reg:DI 5 di [ tcpstp ])) ./src/urosHandlers.c:108# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 5 di [ tcpstp ])
+        (nil)))
+(note# 0 0 NOTE_INSN_FUNCTION_BEG)
+(insn# 0 0 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [ msgp+0 S8 A64])
+        (const_int 0 [0])) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                    (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])
+            (const_int 0 [0]))) ./src/urosHandlers.c:111# {*cmpdi_ccno_1}
+     (nil))
+(jump_insn# 0 0 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref #)
+            (pc))) ./src/urosHandlers.c:111# {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 12)
+(note# 0 0 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 3 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.4048") [flags 0x2] <var_decl # __PRETTY_FUNCTION__>)) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 3 (set (reg:SI 1 dx)
+        (const_int 111 [0x6f])) ./src/urosHandlers.c:111# {*movsi_internal}
+     (nil))
+(insn# 0 0 3 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2] <var_decl # *.LC0>)) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 3 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2] <var_decl # *.LC1>)) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 3 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41] <function_decl # __assert_fail>) [ __assert_fail S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:111# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_DEAD (reg:DI 4 si)
+            (expr_list:REG_DEAD (reg:DI 2 cx)
+                (expr_list:REG_DEAD (reg:SI 1 dx)
+                    (expr_list:REG_NORETURN (const_int 0 [0])
+                        (expr_list:REG_EH_REGION (const_int 0 [0])
+                            (nil)))))))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 0 0 0)
+(code_label 12 0 0 4 12 "" [1 uses])
+(note# 0 0 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 4 (set (reg/f:DI 0 ax [68])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 4 (set (reg/f:DI 0 ax [orig:59 D.4161 ] [59])
+        (mem/f/j:DI (plus:DI (reg/f:DI 0 ax [68])
+                (const_int 32 [0x20])) [ tcpstp_2(D)->topicp+0 S8 A64])) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [68])
+        (nil)))
+(insn# 0 0 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 0 ax [orig:59 D.4161 ] [59])
+            (const_int 0 [0]))) ./src/urosHandlers.c:111# {*cmpdi_ccno_1}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [orig:59 D.4161 ] [59])
+        (nil)))
+(jump_insn# 0 0 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref #)
+            (pc))) ./src/urosHandlers.c:111# {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 13)
+(note# 0 0 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 5 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.4048") [flags 0x2] <var_decl # __PRETTY_FUNCTION__>)) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 5 (set (reg:SI 1 dx)
+        (const_int 111 [0x6f])) ./src/urosHandlers.c:111# {*movsi_internal}
+     (nil))
+(insn# 0 0 5 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2] <var_decl # *.LC0>)) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 5 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2] <var_decl # *.LC2>)) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 5 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41] <function_decl # __assert_fail>) [ __assert_fail S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:111# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_DEAD (reg:DI 4 si)
+            (expr_list:REG_DEAD (reg:DI 2 cx)
+                (expr_list:REG_DEAD (reg:SI 1 dx)
+                    (expr_list:REG_NORETURN (const_int 0 [0])
+                        (expr_list:REG_EH_REGION (const_int 0 [0])
+                            (nil)))))))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 0 0 0)
+(code_label 13 0 0 6 13 "" [1 uses])
+(note# 0 0 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 6 (set (reg/f:DI 0 ax [69])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 6 (set (reg/f:DI 0 ax [orig:60 D.4161 ] [60])
+        (mem/f/j:DI (plus:DI (reg/f:DI 0 ax [69])
+                (const_int 32 [0x20])) [ tcpstp_2(D)->topicp+0 S8 A64])) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [69])
+        (nil)))
+(insn# 0 0 6 (set (reg:QI 0 ax [orig:61 D.4162 ] [61])
+        (mem:QI (plus:DI (reg/f:DI 0 ax [orig:60 D.4161 ] [60])
+                (const_int 32 [0x20])) [ *_4+32 S1 A64])) ./src/urosHandlers.c:111# {*movqi_internal}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [orig:60 D.4161 ] [60])
+        (nil)))
+(insn# 0 0 6 (parallel [
+            (set (reg:SI 0 ax [orig:62 D.4162 ] [62])
+                (and:SI (reg:SI 0 ax [orig:61 D.4162 ] [61])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) ./src/urosHandlers.c:111# {*andsi_1}
+     (nil))
+(insn# 0 0 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 0 ax [orig:62 D.4162 ] [62])
+            (const_int 0 [0]))) ./src/urosHandlers.c:111# {*cmpqi_ccno_1}
+     (expr_list:REG_DEAD (reg:QI 0 ax [orig:62 D.4162 ] [62])
+        (nil)))
+(jump_insn# 0 0 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref #)
+            (pc))) ./src/urosHandlers.c:111# {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 14)
+(note# 0 0 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 7 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.4048") [flags 0x2] <var_decl # __PRETTY_FUNCTION__>)) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 7 (set (reg:SI 1 dx)
+        (const_int 111 [0x6f])) ./src/urosHandlers.c:111# {*movsi_internal}
+     (nil))
+(insn# 0 0 7 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2] <var_decl # *.LC0>)) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 7 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2] <var_decl # *.LC3>)) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 7 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41] <function_decl # __assert_fail>) [ __assert_fail S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:111# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_DEAD (reg:DI 4 si)
+            (expr_list:REG_DEAD (reg:DI 2 cx)
+                (expr_list:REG_DEAD (reg:SI 1 dx)
+                    (expr_list:REG_NORETURN (const_int 0 [0])
+                        (expr_list:REG_EH_REGION (const_int 0 [0])
+                            (nil)))))))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 0 0 0)
+(code_label 14 0 0 8 14 "" [1 uses])
+(note# 0 0 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 8 (set (reg/f:DI 0 ax [70])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 8 (set (reg/f:DI 0 ax [orig:63 D.4163 ] [63])
+        (mem/f/j:DI (plus:DI (reg/f:DI 0 ax [70])
+                (const_int 8 [0x8])) [ tcpstp_2(D)->csp+0 S8 A64])) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [70])
+        (nil)))
+(insn# 0 0 8 (set (reg:DI 5 di)
+        (reg/f:DI 0 ax [orig:63 D.4163 ] [63])) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [orig:63 D.4163 ] [63])
+        (nil)))
+(call_insn# 0 0 8 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("urosConnIsValid") [flags 0x41] <function_decl # urosConnIsValid>) [ urosConnIsValid S1 A8])
+            (const_int 0 [0]))) ./src/urosHandlers.c:111# {*call_value}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn# 0 0 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 0 ax [orig:64 D.4162 ] [64])
+            (const_int 0 [0]))) ./src/urosHandlers.c:111# {*cmpqi_ccno_1}
+     (expr_list:REG_DEAD (reg:QI 0 ax [orig:64 D.4162 ] [64])
+        (nil)))
+(jump_insn# 0 0 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref #)
+            (pc))) ./src/urosHandlers.c:111# {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 15)
+(note# 0 0 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 9 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.4048") [flags 0x2] <var_decl # __PRETTY_FUNCTION__>)) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 9 (set (reg:SI 1 dx)
+        (const_int 111 [0x6f])) ./src/urosHandlers.c:111# {*movsi_internal}
+     (nil))
+(insn# 0 0 9 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2] <var_decl # *.LC0>)) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 9 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2] <var_decl # *.LC4>)) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 9 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41] <function_decl # __assert_fail>) [ __assert_fail S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:111# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_DEAD (reg:DI 4 si)
+            (expr_list:REG_DEAD (reg:DI 2 cx)
+                (expr_list:REG_DEAD (reg:SI 1 dx)
+                    (expr_list:REG_NORETURN (const_int 0 [0])
+                        (expr_list:REG_EH_REGION (const_int 0 [0])
+                            (nil)))))))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 0 0 0)
+(code_label 15 0 0 10 15 "" [1 uses])
+(note# 0 0 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 10 (set (reg:DI 4 si)
+        (const_int 48 [0x30])) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 10 (set (reg:DI 5 di)
+        (const_int 0 [0])) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 10 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("urosAlloc") [flags 0x41] <function_decl # urosAlloc>) [ urosAlloc S1 A8])
+            (const_int 0 [0]))) ./src/urosHandlers.c:111# {*call_value}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_DEAD (reg:DI 4 si)
+            (nil)))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn# 0 0 10 (set (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [ msgp+0 S8 A64])
+        (reg:DI 0 ax [71])) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 0 ax [71])
+        (nil)))
+(insn# 0 0 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                    (const_int -8 [0xfffffffffffffff8])) [ msgp+0 S8 A64])
+            (const_int 0 [0]))) ./src/urosHandlers.c:111# {*cmpdi_ccno_1}
+     (nil))
+(jump_insn# 0 0 10 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref #)
+            (pc))) ./src/urosHandlers.c:111# {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 16)
+(note# 0 0 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 11 (set (reg/f:DI 0 ax [72])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 11 (set (mem/j:SI (reg/f:DI 0 ax [72]) [ tcpstp_2(D)->err+0 S4 A64])
+        (const_int -101 [0xffffffffffffff9b])) ./src/urosHandlers.c:111# {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [72])
+        (nil)))
+(jump_insn# 0 0 11 (set (pc)
+        (label_ref #)) ./src/urosHandlers.c:111# {jump}
+     (nil)
+ -> 17)
+(barrier 0 0 0)
+(code_label 16 0 0 12 16 "" [1 uses])
+(note# 0 0 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 12 (set (reg:DI 0 ax [73])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [ msgp+0 S8 A64])) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 12 (set (reg:DI 5 di)
+        (reg:DI 0 ax [73])) ./src/urosHandlers.c:111# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 0 ax [73])
+        (nil)))
+(call_insn# 0 0 12 (call (mem:QI (symbol_ref:DI ("init_msg__velodyne_msgs__VelodyneScan") [flags 0x41] <function_decl # init_msg__velodyne_msgs__VelodyneScan>) [ init_msg__velodyne_msgs__VelodyneScan S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:111# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(jump_insn# 0 0 12 (set (pc)
+        (label_ref #)) ./src/urosHandlers.c:114# {jump}
+     (nil)
+ -> 18)
+(barrier 0 0 0)
+(code_label 19 0 0 13 19 "" [1 uses])
+(note# 0 0 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 13 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2] <var_decl # *.LC5>)) ./src/urosHandlers.c:116# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 13 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41] <function_decl # __builtin_puts>) [ __builtin_puts S1 A8])
+            (const_int 0 [0]))) ./src/urosHandlers.c:116# {*call_value}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_UNUSED (reg:SI 0 ax)
+            (nil)))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn# 0 0 13 (set (reg:SI 5 di)
+        (const_int 1 [0x1])) ./src/urosHandlers.c:117# {*movsi_internal}
+     (nil))
+(call_insn# 0 0 13 (call (mem:QI (symbol_ref:DI ("urosThreadSleepSec") [flags 0x41] <function_decl # urosThreadSleepSec>) [ urosThreadSleepSec S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:117# {*call}
+     (expr_list:REG_DEAD (reg:SI 5 di)
+        (nil))
+    (expr_list:REG_BR_PRED (use (reg:SI 5 di))
+        (nil)))
+(insn# 0 0 13 (const_int 0 [0]) ./src/urosHandlers.c:117# {nop}
+     (nil))
+(code_label 18 0 0 15 18 "" [1 uses])
+(note# 0 0 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 15 (set (reg:DI 0 ax [74])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])) ./src/urosHandlers.c:114# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 15 (set (reg:DI 5 di)
+        (reg:DI 0 ax [74])) ./src/urosHandlers.c:114# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 0 ax [74])
+        (nil)))
+(call_insn# 0 0 15 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("urosTcpRosStatusCheckExit") [flags 0x41] <function_decl # urosTcpRosStatusCheckExit>) [ urosTcpRosStatusCheckExit S1 A8])
+            (const_int 0 [0]))) ./src/urosHandlers.c:114# {*call_value}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn# 0 0 15 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 0 ax [orig:65 D.4162 ] [65])
+            (const_int 0 [0]))) ./src/urosHandlers.c:114# {*cmpqi_ccno_1}
+     (expr_list:REG_DEAD (reg:QI 0 ax [orig:65 D.4162 ] [65])
+        (nil)))
+(jump_insn# 0 0 15 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref #)
+            (pc))) ./src/urosHandlers.c:114# {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 19)
+(note# 0 0 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 16 (set (reg/f:DI 0 ax [75])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])) ./src/urosHandlers.c:126# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 16 (set (mem/j:SI (reg/f:DI 0 ax [75]) [ tcpstp_2(D)->err+0 S4 A64])
+        (const_int 0 [0])) ./src/urosHandlers.c:126# {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [75])
+        (nil)))
+(code_label 17 0 0 17 17 ("_finally") [1 uses])
+(note# 0 0 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn# 0 0 17 (set (reg:DI 0 ax [76])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [ msgp+0 S8 A64])) ./src/urosHandlers.c:130# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 17 (set (reg:DI 5 di)
+        (reg:DI 0 ax [76])) ./src/urosHandlers.c:130# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 0 ax [76])
+        (nil)))
+(call_insn# 0 0 17 (call (mem:QI (symbol_ref:DI ("clean_msg__velodyne_msgs__VelodyneScan") [flags 0x41] <function_decl # clean_msg__velodyne_msgs__VelodyneScan>) [ clean_msg__velodyne_msgs__VelodyneScan S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:130# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn# 0 0 17 (set (reg:DI 0 ax [77])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -8 [0xfffffffffffffff8])) [ msgp+0 S8 A64])) ./src/urosHandlers.c:130# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 17 (set (reg:DI 5 di)
+        (reg:DI 0 ax [77])) ./src/urosHandlers.c:130# {*movdi_internal_rex64}
+     (expr_list:REG_DEAD (reg:DI 0 ax [77])
+        (nil)))
+(call_insn# 0 0 17 (call (mem:QI (symbol_ref:DI ("urosFree") [flags 0x41] <function_decl # urosFree>) [ urosFree S1 A8])
+        (const_int 0 [0])) ./src/urosHandlers.c:130# {*call}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn# 0 0 17 (set (reg/f:DI 0 ax [78])
+        (mem/f/c:DI (plus:DI (reg/f:DI 6 bp)
+                (const_int -24 [0xffffffffffffffe8])) [ tcpstp+0 S8 A64])) ./src/urosHandlers.c:131# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 17 (set (reg:SI 0 ax [orig:66 D.4164 ] [66])
+        (mem/j:SI (reg/f:DI 0 ax [78]) [ tcpstp_2(D)->err+0 S4 A64])) ./src/urosHandlers.c:131# {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:DI 0 ax [78])
+        (nil)))
+(insn# 0 0 17 (use (reg/i:SI 0 ax)) ./src/urosHandlers.c:132#
+     (nil))
+(note# 0 0 NOTE_INSN_EPILOGUE_BEG)
+(insn/f# 0 0 17 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 6 bp)
+                    (const_int 8 [0x8])))
+            (set (reg/f:DI 6 bp)
+                (mem:DI (reg/f:DI 6 bp) [  S8 A8]))
+            (clobber (mem:BLK (scratch) [  A8]))
+        ]) ./src/urosHandlers.c:132# {leave_rex64}
+     (expr_list:REG_CFA_DEF_CFA (plus:DI (reg/f:DI 7 sp)
+            (const_int 8 [0x8]))
+        (nil)))
+(jump_insn# 0 0 17 (simple_return) ./src/urosHandlers.c:132# {simple_return_internal}
+     (nil)
+ -> simple_return)
+(barrier 0 0 0)
+
+;; Function urosHandlersPublishTopics (urosHandlersPublishTopics, funcdef_no=2, decl_uid=3598, cgraph_uid=2)
+
+(note# 0 0 NOTE_INSN_DELETED)
+(note# 0 0 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f# 0 0 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [  S8 A8])
+        (reg/f:DI 6 bp)) ./src/urosHandlers.c:182# {*pushdi2_rex64}
+     (nil))
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (reg/f:DI 7 sp)) ./src/urosHandlers.c:182# {*movdi_internal_rex64}
+     (nil))
+(note# 0 0 NOTE_INSN_PROLOGUE_END)
+(note# 0 0 NOTE_INSN_FUNCTION_BEG)
+(insn# 0 0 2 (set (reg:SI 2 cx)
+        (mem/u/c:SI (symbol_ref:DI ("uros_nulltopicflags") [flags 0x40] <var_decl # uros_nulltopicflags>) [ uros_nulltopicflags+0 S4 A32])) ./src/urosHandlers.c:185# {*movsi_internal}
+     (nil))
+(insn# 0 0 2 (set (reg:DI 1 dx)
+        (symbol_ref:DI ("pub_tpc__rosout") [flags 0x3] <function_decl # pub_tpc__rosout>)) ./src/urosHandlers.c:185# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2] <var_decl # *.LC6>)) ./src/urosHandlers.c:185# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2] <var_decl # *.LC7>)) ./src/urosHandlers.c:185# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("urosNodePublishTopicSZ") [flags 0x41] <function_decl # urosNodePublishTopicSZ>) [ urosNodePublishTopicSZ S1 A8])
+            (const_int 0 [0]))) ./src/urosHandlers.c:185# {*call_value}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_DEAD (reg:DI 4 si)
+            (expr_list:REG_DEAD (reg:SI 2 cx)
+                (expr_list:REG_DEAD (reg:DI 1 dx)
+                    (expr_list:REG_UNUSED (reg:SI 0 ax)
+                        (nil))))))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_BR_PRED (use (reg:SI 2 cx))
+                    (nil))))))
+(insn# 0 0 2 (set (reg:SI 2 cx)
+        (mem/u/c:SI (symbol_ref:DI ("uros_nulltopicflags") [flags 0x40] <var_decl # uros_nulltopicflags>) [ uros_nulltopicflags+0 S4 A32])) ./src/urosHandlers.c:193# {*movsi_internal}
+     (nil))
+(insn# 0 0 2 (set (reg:DI 1 dx)
+        (symbol_ref:DI ("pub_tpc__vlp_16") [flags 0x3] <function_decl # pub_tpc__vlp_16>)) ./src/urosHandlers.c:193# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2] <var_decl # *.LC8>)) ./src/urosHandlers.c:193# {*movdi_internal_rex64}
+     (nil))
+(insn# 0 0 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2] <var_decl # *.LC9>)) ./src/urosHandlers.c:193# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("urosNodePublishTopicSZ") [flags 0x41] <function_decl # urosNodePublishTopicSZ>) [ urosNodePublishTopicSZ S1 A8])
+            (const_int 0 [0]))) ./src/urosHandlers.c:193# {*call_value}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_DEAD (reg:DI 4 si)
+            (expr_list:REG_DEAD (reg:SI 2 cx)
+                (expr_list:REG_DEAD (reg:DI 1 dx)
+                    (expr_list:REG_UNUSED (reg:SI 0 ax)
+                        (nil))))))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_BR_PRED (use (reg:SI 2 cx))
+                    (nil))))))
+(note# 0 0 NOTE_INSN_EPILOGUE_BEG)
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (mem:DI (post_inc:DI (reg/f:DI 7 sp)) [  S8 A8])) ./src/urosHandlers.c:199# {*popdi1}
+     (expr_list:REG_CFA_DEF_CFA (plus:DI (reg/f:DI 7 sp)
+            (const_int 8 [0x8]))
+        (nil)))
+(jump_insn# 0 0 2 (simple_return) ./src/urosHandlers.c:199# {simple_return_internal}
+     (nil)
+ -> simple_return)
+(barrier 0 0 0)
+
+;; Function urosHandlersUnpublishTopics (urosHandlersUnpublishTopics, funcdef_no=3, decl_uid=3600, cgraph_uid=3)
+
+(note# 0 0 NOTE_INSN_DELETED)
+(note# 0 0 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f# 0 0 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [  S8 A8])
+        (reg/f:DI 6 bp)) ./src/urosHandlers.c:205# {*pushdi2_rex64}
+     (nil))
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (reg/f:DI 7 sp)) ./src/urosHandlers.c:205# {*movdi_internal_rex64}
+     (nil))
+(note# 0 0 NOTE_INSN_PROLOGUE_END)
+(note# 0 0 NOTE_INSN_FUNCTION_BEG)
+(insn# 0 0 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2] <var_decl # *.LC7>)) ./src/urosHandlers.c:208# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("urosNodeUnpublishTopicSZ") [flags 0x41] <function_decl # urosNodeUnpublishTopicSZ>) [ urosNodeUnpublishTopicSZ S1 A8])
+            (const_int 0 [0]))) ./src/urosHandlers.c:208# {*call_value}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_UNUSED (reg:SI 0 ax)
+            (nil)))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn# 0 0 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2] <var_decl # *.LC9>)) ./src/urosHandlers.c:213# {*movdi_internal_rex64}
+     (nil))
+(call_insn# 0 0 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("urosNodeUnpublishTopicSZ") [flags 0x41] <function_decl # urosNodeUnpublishTopicSZ>) [ urosNodeUnpublishTopicSZ S1 A8])
+            (const_int 0 [0]))) ./src/urosHandlers.c:213# {*call_value}
+     (expr_list:REG_DEAD (reg:DI 5 di)
+        (expr_list:REG_UNUSED (reg:SI 0 ax)
+            (nil)))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(note# 0 0 NOTE_INSN_EPILOGUE_BEG)
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (mem:DI (post_inc:DI (reg/f:DI 7 sp)) [  S8 A8])) ./src/urosHandlers.c:216# {*popdi1}
+     (expr_list:REG_CFA_DEF_CFA (plus:DI (reg/f:DI 7 sp)
+            (const_int 8 [0x8]))
+        (nil)))
+(jump_insn# 0 0 2 (simple_return) ./src/urosHandlers.c:216# {simple_return_internal}
+     (nil)
+ -> simple_return)
+(barrier 0 0 0)
+
+;; Function urosHandlersSubscribeTopics (urosHandlersSubscribeTopics, funcdef_no=4, decl_uid=3602, cgraph_uid=4)
+
+(note# 0 0 NOTE_INSN_DELETED)
+(note# 0 0 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f# 0 0 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [  S8 A8])
+        (reg/f:DI 6 bp)) ./src/urosHandlers.c:222# {*pushdi2_rex64}
+     (nil))
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (reg/f:DI 7 sp)) ./src/urosHandlers.c:222# {*movdi_internal_rex64}
+     (nil))
+(note# 0 0 NOTE_INSN_PROLOGUE_END)
+(note# 0 0 NOTE_INSN_FUNCTION_BEG)
+(note# 0 0 NOTE_INSN_EPILOGUE_BEG)
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (mem:DI (post_inc:DI (reg/f:DI 7 sp)) [  S8 A8])) ./src/urosHandlers.c:225# {*popdi1}
+     (expr_list:REG_CFA_DEF_CFA (plus:DI (reg/f:DI 7 sp)
+            (const_int 8 [0x8]))
+        (nil)))
+(jump_insn# 0 0 2 (simple_return) ./src/urosHandlers.c:225# {simple_return_internal}
+     (nil)
+ -> simple_return)
+(barrier 0 0 0)
+
+;; Function urosHandlersUnsubscribeTopics (urosHandlersUnsubscribeTopics, funcdef_no=5, decl_uid=3604, cgraph_uid=5)
+
+(note# 0 0 NOTE_INSN_DELETED)
+(note# 0 0 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f# 0 0 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [  S8 A8])
+        (reg/f:DI 6 bp)) ./src/urosHandlers.c:231# {*pushdi2_rex64}
+     (nil))
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (reg/f:DI 7 sp)) ./src/urosHandlers.c:231# {*movdi_internal_rex64}
+     (nil))
+(note# 0 0 NOTE_INSN_PROLOGUE_END)
+(note# 0 0 NOTE_INSN_FUNCTION_BEG)
+(note# 0 0 NOTE_INSN_EPILOGUE_BEG)
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (mem:DI (post_inc:DI (reg/f:DI 7 sp)) [  S8 A8])) ./src/urosHandlers.c:234# {*popdi1}
+     (expr_list:REG_CFA_DEF_CFA (plus:DI (reg/f:DI 7 sp)
+            (const_int 8 [0x8]))
+        (nil)))
+(jump_insn# 0 0 2 (simple_return) ./src/urosHandlers.c:234# {simple_return_internal}
+     (nil)
+ -> simple_return)
+(barrier 0 0 0)
+
+;; Function urosHandlersPublishServices (urosHandlersPublishServices, funcdef_no=6, decl_uid=3606, cgraph_uid=6)
+
+(note# 0 0 NOTE_INSN_DELETED)
+(note# 0 0 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f# 0 0 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [  S8 A8])
+        (reg/f:DI 6 bp)) ./src/urosHandlers.c:240# {*pushdi2_rex64}
+     (nil))
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (reg/f:DI 7 sp)) ./src/urosHandlers.c:240# {*movdi_internal_rex64}
+     (nil))
+(note# 0 0 NOTE_INSN_PROLOGUE_END)
+(note# 0 0 NOTE_INSN_FUNCTION_BEG)
+(note# 0 0 NOTE_INSN_EPILOGUE_BEG)
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (mem:DI (post_inc:DI (reg/f:DI 7 sp)) [  S8 A8])) ./src/urosHandlers.c:243# {*popdi1}
+     (expr_list:REG_CFA_DEF_CFA (plus:DI (reg/f:DI 7 sp)
+            (const_int 8 [0x8]))
+        (nil)))
+(jump_insn# 0 0 2 (simple_return) ./src/urosHandlers.c:243# {simple_return_internal}
+     (nil)
+ -> simple_return)
+(barrier 0 0 0)
+
+;; Function urosHandlersUnpublishServices (urosHandlersUnpublishServices, funcdef_no=7, decl_uid=3608, cgraph_uid=7)
+
+(note# 0 0 NOTE_INSN_DELETED)
+(note# 0 0 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f# 0 0 2 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [  S8 A8])
+        (reg/f:DI 6 bp)) ./src/urosHandlers.c:249# {*pushdi2_rex64}
+     (nil))
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (reg/f:DI 7 sp)) ./src/urosHandlers.c:249# {*movdi_internal_rex64}
+     (nil))
+(note# 0 0 NOTE_INSN_PROLOGUE_END)
+(note# 0 0 NOTE_INSN_FUNCTION_BEG)
+(note# 0 0 NOTE_INSN_EPILOGUE_BEG)
+(insn/f# 0 0 2 (set (reg/f:DI 6 bp)
+        (mem:DI (post_inc:DI (reg/f:DI 7 sp)) [  S8 A8])) ./src/urosHandlers.c:252# {*popdi1}
+     (expr_list:REG_CFA_DEF_CFA (plus:DI (reg/f:DI 7 sp)
+            (const_int 8 [0x8]))
+        (nil)))
+(jump_insn# 0 0 2 (simple_return) ./src/urosHandlers.c:252# {simple_return_internal}
+     (nil)
+ -> simple_return)
+(barrier 0 0 0)

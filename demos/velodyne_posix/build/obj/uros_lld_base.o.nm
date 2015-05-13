@@ -1,0 +1,7 @@
+                 U __assert_fail
+                 U free
+                 U malloc
+0000000000000039 r __PRETTY_FUNCTION__.3297
+0000000000000006 T uros_lld_alloc
+0000000000000044 T uros_lld_free
+0000000000000000 T uros_lld_init

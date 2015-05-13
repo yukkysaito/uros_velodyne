@@ -1,0 +1,17 @@
+urosUser.c:60:13:uros_nodeconfig_readstring	64	static
+urosUser.c:86:13:uros_nodeconfig_writestring	48	static
+urosUser.c:106:13:uros_nodeconfig_readaddr	48	static
+urosUser.c:118:13:uros_nodeconfig_writeaddr	64	static
+urosUser.c:150:6:urosUserNodeConfigLoad	48	static
+urosUser.c:196:6:urosUserNodeConfigSave	48	static
+urosUser.c:230:12:urosUserShutdown	64	static
+urosUser.c:272:6:urosUserRegisterStaticTypes	16	static
+urosUser.c:283:12:urosUserPublishTopics	16	static
+urosUser.c:295:12:urosUserUnpublishTopics	16	static
+urosUser.c:307:12:urosUserSubscribeTopics	16	static
+urosUser.c:319:12:urosUserUnsubscribeTopics	16	static
+urosUser.c:331:12:urosUserPublishServices	16	static
+urosUser.c:343:12:urosUserUnpublishServices	16	static
+urosUser.c:355:12:urosUserSubscribeParams	80	static
+urosUser.c:376:12:urosUserUnsubscribeParams	48	static
+urosUser.c:400:12:urosUserParamUpdate	32	static

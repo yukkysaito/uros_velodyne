@@ -1,0 +1,8 @@
+urosHandlers.c:68:12:pub_tpc__rosout	48	static
+urosHandlers.c:108:12:pub_tpc__vlp_16	48	static
+urosHandlers.c:182:6:urosHandlersPublishTopics	16	static
+urosHandlers.c:205:6:urosHandlersUnpublishTopics	16	static
+urosHandlers.c:222:6:urosHandlersSubscribeTopics	16	static
+urosHandlers.c:231:6:urosHandlersUnsubscribeTopics	16	static
+urosHandlers.c:240:6:urosHandlersPublishServices	16	static
+urosHandlers.c:249:6:urosHandlersUnpublishServices	16	static
